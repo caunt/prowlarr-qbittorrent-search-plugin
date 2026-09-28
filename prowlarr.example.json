@@ -1,0 +1,12 @@
+{
+    "url": "http://127.0.0.1:9696",
+    "api_key": "YOUR_API_KEY_HERE",
+    "tracker_first": false,
+    "indexer_ids": [],
+    "workers": 8,
+    "timeout": 30,
+    "page_size": 100,
+    "max_pages": 1,
+    "use_proxy": true,
+    "ca_file": ""
+}
