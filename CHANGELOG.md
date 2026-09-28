@@ -1,6 +1,11 @@
 # Changelog
 
-## 1.0.0 — 2026-09-28
+## 1.1 — 2026-09-28
+
+- Use qBittorrent-compatible two-part plugin versioning so the installed version is detected correctly.
+- Increase the default HTTP request timeout from 30 to 120 seconds.
+
+## 1.0 — 2026-09-28
 
 Initial independent implementation of the Prowlarr qBittorrent search plugin.
 

@@ -1,4 +1,4 @@
-# VERSION: 1.0.0
+# VERSION: 1.1
 # AUTHORS: caunt (https://github.com/caunt)
 # SPDX-License-Identifier: MIT
 """Single-file Prowlarr search engine for qBittorrent. Python 3.9+."""
@@ -33,7 +33,7 @@ from urllib.request import (
     Request, build_opener,
 )
 
-VERSION = "1.0.0"
+VERSION = "1.1"
 PROJECT_URL = "https://github.com/caunt/prowlarr-qbittorrent-search-plugin"
 DEFAULTS = {
     "url": "http://127.0.0.1:9696",
@@ -41,7 +41,7 @@ DEFAULTS = {
     "tracker_first": False,
     "indexer_ids": [],
     "workers": 8,
-    "timeout": 30,
+    "timeout": 120,
     "page_size": 100,
     "max_pages": 1,
     "use_proxy": True,

@@ -589,6 +589,13 @@ class CLITests(unittest.TestCase):
     def test_version_header_matches_runtime(self):
         self.assertEqual((ROOT / "prowlarr.py").read_text().splitlines()[0], "# VERSION: " + plugin.VERSION)
 
+    def test_qbittorrent_version_format(self):
+        self.assertRegex(plugin.VERSION, r"^\\d+\\.\\d+$")
+
+    def test_default_timeout_is_120_seconds(self):
+        self.assertEqual(plugin.DEFAULTS["timeout"], 120)
+        self.assertEqual(json.loads((ROOT / "prowlarr.example.json").read_text())["timeout"], 120)
+
 
 if __name__ == "__main__":
     unittest.main()
